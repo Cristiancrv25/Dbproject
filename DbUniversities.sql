@@ -93,7 +93,7 @@ Insert into Universities (id, program, university, faculty, place, city, semeste
 Insert into Universities (id, program, university, faculty, place, city, semester_length, coordinates) VALUES (79, 'Psicologia', 'Universidad Catolica Luis Amigo', 'Facultad de psicologia y ciencias sociales', 'Sede unica', 'Manizales', 10, '5.053534952294835, -75.48352762484004');
 Insert into Universities (id, program, university, faculty, place, city, semester_length, coordinates) VALUES (80, 'Negocios Internacionales', 'Universidad Catolica Luis Amigo', 'Facultad de ciencias administrativas, economicas y contables', 'Sede unica', 'Manizales', 10, '5.0535301863402315, -75.48343592091699');
 
-END
+END;
 
 
 
