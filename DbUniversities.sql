@@ -107,7 +107,22 @@ select * from Universities;
 -- Si queremos revisar solo los programas académicos ofrecidos por una universidad en específico, ejecutamos la siguiente consulta:
 
 select * from Universities
-    where University = 'Universidad Nacional de Colombia';
+    where University = 'Universidad Autonoma de Manizales';
+
+-- Se presenta un error en los dos últimos registros, debido a que se registró mal la facultad y sede de 'Fisioterapia' y 'Odontologia'.
+
+Update Universities
+    SET faculty = 'Facultad de salud', place = 'Bloque 13'
+    where id = 14;
+
+Update Universities
+    SET faculty = 'Facultad de salud', place = 'Bloque 13'
+    where id = 15;
+
+-- Para revisar que se hayan actualizado correctamente las consultas anteriores, volvemos a buscar los programas de la 'Universidad Autonoma de Manizales':
+
+select * from Universities
+    where University = 'Universidad Autonoma de Manizales';
 
 -- Si queremos contar la cantidad total de registros, podemos utilizar la siguiente consulta:
 
