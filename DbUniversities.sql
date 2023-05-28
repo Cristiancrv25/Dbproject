@@ -130,12 +130,12 @@ select count (*) as Total_registros from Universities;
 
 -- Si queremos revisar cuantas facultades tiene cada universidad, se debe realizar la siguiente consulta:
 
-select university, count (faculty) as Total_facultades from Universities
+select university, count (distinct faculty) as Total_facultades from Universities
     group by university;
 
 -- Ahora supongamos que queremos revisar la consulta anterior en orden descendente:
 
-select university, count (faculty) as Total_facultades from Universities
+select university, count (distinct faculty) as Total_facultades from Universities
     group by university
     order by Total_facultades desc;
 
